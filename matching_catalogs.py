@@ -4,7 +4,9 @@ from astropy.table import Table
 from tqdm import tqdm
 
 def match_catalogs(cat1, cat2, common_cols, filename):
-    ''' Takes in two catalogs
+    ''' 
+    Takes in two catalogs, merges them based on values 
+    in common columns and returns the merged catalog
     
     Input parameters:
     cat1        : str, location of catalog 1; file format in csv
