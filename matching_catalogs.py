@@ -29,7 +29,7 @@ def match_catalogs(cat1, cat2, common_cols, filename):
     common_columns = common_cols
     # Merge the DataFrames based on the common columns
     merged_df = pd.merge(df1_new, df2_new, on=common_columns, how='inner')
-    # Display the merged DataFrame
+    # Save the merged DataFrame
     merged_df.to_csv(filename)
     
     
